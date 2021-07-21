@@ -9,61 +9,52 @@ Instrukcja instalacji oraz obsługi wtyczki „BluePayment” dla platformy Open
 |**Wersja dokumentu**|1.0.0|
 |**Wersja wtyczki**|1.0.0|
 |**Platforma**|OpenCart|
-# Spis treści
-` `TOC \o "1-3" \h \z \u [Spis treści	PAGEREF _Toc3539 \h1](#_Toc3539)
-
-[Podstawowe informacje	PAGEREF _Toc3540 \h2](#_Toc3540)
-
-[Wymagania systemowe	PAGEREF _Toc3541 \h2](#_Toc3541)
-
-[Opis zmian	PAGEREF _Toc3542 \h2](#_Toc3542)
-
-[Instalacja modułu	PAGEREF _Toc3543 \h3](#_Toc3543)
-
-[Konfiguracja modułu	PAGEREF _Toc3544 \h4](#_Toc3544)
-
-[1. Konfiguracja podstawowych pól	PAGEREF _Toc3545 \h4](#_Toc3545)
-
-[2. Konfiguracja sekcji „Ustawienia walut”	PAGEREF _Toc3546 \h5](#_Toc3546)
-
-[Logi modułu	PAGEREF _Toc3547 \h6](#_Toc3547)
-
-[Konfiguracja adresów URL	PAGEREF _Toc3548 \h6](#_Toc3548)
 
 
-# Podstawowe informacje
-Moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie OpenCart.
-## Wymagania systemowe.
+## Podstawowe informacje
+BluePayment to moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie opartym na platformie OpenCart.
+
+### Główne funkcje
+
+Do najważniejszych funkcji modułu zalicza się:
+- realizację płatności online poprzez odpowiednie zbudowanie startu transakcji
+- obsługę powiadomień o statusie transakcji (notyfikacje XML)
+- obsługę zakupów bez rejestracji w serwisie
+- obsługę dwóch trybów działania – testowego i produkcyjnego (dla każdego z nich wymagane są osobne dane kont, po które zwróć się do nas)
+- przekierowanie na paywall/bramkę Blue media, gdzie są dostępne wszystkie formy płatności 
+
+### Wymagania systemowe.
 - OpenCart 3 lub wyższa
 - Wersja PHP 7.1 lub wyższa
-## Opis zmian
+
+### Opis zmian
 Wersja 1.0.0
-
 • Pierwsza wersja dokumentu
+
 # Instalacja modułu
-1. Zainstaluj moduł jedną z poniższych metod:
-   1. Instalacja automatyczna
+Możesz zainstalować moduł płatności jedną z dwóch metod – automatycznie lub manualnie.
 
-`	`◦	Przejdź do Extensions  → Marketplace
+Instalacja manualna
 
-`	`◦	Za pomocą wyszukiwarki wyszukaj wtyczkę „*Blue Media płatności online*”
+1. Przejdź do zakładki Extensions ➝ Installer
+2. Za pomocą formularza załaduj plik z modułem, a następnie wyślij formularz.
+3. Przejdź do punktu Aktywacja modułu
 
-`	`◦	W zakładce „Download” kliknij przycisk „Install”
+Instalacja automatyczna
 
-`	`◦	Przejdź do punktu *Aktywacja modułu*
+1. Przejdź do zakładki Extensions ➝ Marketplace
+2. Za pomocą wyszukiwarki wyszukaj wtyczkę Blue Media płatności online
+3. W zakładce Download kliknij przycisk Install
+4. Przejdź do punktu Aktywacja modułu
 
-1. Instalacja manualna
+# Aktywacja
 
-`	`◦	Przejdź do zakładki Extensions  → Installer
+1. Przejdź do zakładki Extensions > Extensions 
+2. Z listy rozwijanej wybierz Payments
+3. Wyszukaj moduł BM płatności online, zainstaluj ją, a następnie przejdź do konfiguracji modułu.
 
-◦	Za pomocą formularza załaduj plik z modułem*,* a następnie wyślij formularz.
 
-`	`◦	Przejdź do punktu *Aktywacja modułu*
 
-1. Aktywacja modułu
-   1. Przejdź do zakładki Extensions   Extensions→
-   1. Z listy rozwijanej wybierz „Payments”
-   1. Wyszukaj moduł „BM płatności online”, zainstaluj ją, a następnie przejdź do sekcji konfiguracji modułu.
 
 ![](Aspose.Words.1383d066-ff99-4ba8-8972-f38f314d96d2.002.jpeg)
 
