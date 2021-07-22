@@ -51,7 +51,7 @@ Instalacja automatyczna
 2. Z listy rozwijanej wybierz Payments
 3. Wyszukaj moduł BM płatności online, zainstaluj ją, a następnie przejdź do konfiguracji modułu.
 
-![Widok modułu w zakładce Rozszerzenia](images/Widok modułu w zakładce Rozszerzenia.jpg)
+![Widok modułu w zakładce Rozszerzenia](opencart-plugin/images/Widok modułu w zakładce Rozszerzenia.png)
 
 
 ![](<img width="306" alt="Widok modułu w zakładce Rozszerzenia" src="https://user-images.githubusercontent.com/87177993/126602104-b7fd5b5d-0343-4f16-9442-e3354be93c49.png">
