@@ -42,7 +42,7 @@ Możesz zainstalować moduł płatności jedną z dwóch metod – automatycznie
 2. Z listy rozwijanej wybierz Payments
 3. Wyszukaj moduł BM płatności online, zainstaluj ją, a następnie przejdź do konfiguracji modułu.
 
-<img width="306" alt="Widok modułu w zakładce Rozszerzenia" src="https://user-images.githubusercontent.com/87177993/126613447-92c964e1-4f31-4ac3-91e4-663f47380f9a.png">
+<img width="611" alt="Widok modułu w zakładce Rozszerzenia" src="https://user-images.githubusercontent.com/87177993/126613447-92c964e1-4f31-4ac3-91e4-663f47380f9a.png">
 
 Widok modułu w zakładce "Rozszerzenia"
 
@@ -64,7 +64,7 @@ Jeżeli wybierzesz środowisko testowe, moduł nie będzie przetwarzał żadnych
 
 6. Po uzupełnieniu wszystkich pól – wciśnij: Zapisz zmiany i gotowe.
 
-<img width="257" alt="Widok konfiguracji modułu" src="https://user-images.githubusercontent.com/87177993/126634649-d01a3169-ecc0-423d-8e14-9a3af7746c22.png">
+<img width="514" alt="Widok konfiguracji modułu" src="https://user-images.githubusercontent.com/87177993/126634649-d01a3169-ecc0-423d-8e14-9a3af7746c22.png">
 
 
 ### Konfiguracja sekcji Ustawienia walut
@@ -77,17 +77,20 @@ Pola wspólne dla wszystkich walut:
 
 2. Klucz współdzielony – unikalny klucz przypisany do danego sklepu (otrzymasz go od Blue Media).
 
+<img width="514" alt="Przykładowy wygląd ustawień  poszczególnych walut" src="https://user-images.githubusercontent.com/87177993/126635294-083fb905-8700-4ee0-b171-9c5b7bb3ffe7.png">
 
-# Logi modułu
-Logi wtyczki dostępne są w sekcji *konfiguracji modułu w zakładce „Logi”.*
+## Logi
 
-Używając listy rozwijanej dostępne będą logi z podziałem na dni. Pliki są tworzone według wzoru bluepayment-YYYY-MM-DD.log
+1. Przejdź do zakładki Konfiguracja modułu > Logi.
 
-Pliki te zawierają logi błędów, które mogą wystąpić podczas procesu płatności. W plikach dostępne są również informacje dot. każdej wykonanej płatności za pomocą wtyczki BlueMedia.
+2. Użyj rozwijanej listy, a znajdziesz tam pliki z podziałem na dni, tworzone według wzoru bluepayment-YYYY-MM-DD.log 
 
-Dane te mogą się okazać przydatne przy zgłaszaniu problemów z działaniem wtyczki.
+Pliki te zawierają logi błędów, które mogą wystąpić podczas procesu płatności. W plikach dostępne są również informacje dotyczące każdej wykonanej płatności za pomocą wtyczki BlueMedia. 
 
-![](Aspose.Words.1383d066-ff99-4ba8-8972-f38f314d96d2.005.jpeg)
+Dane te mogą się okazać przydatne przy zgłaszaniu problemów z działaniem wtyczki. 
+
+<img width="557" alt="Zakładka z logami - przykładowy widok" src="https://user-images.githubusercontent.com/87177993/126635650-fc7a781a-b239-49f0-a629-3d3f4cd7de6e.png">
+
 
 Zakładka z logami - przykładowy widok
 # Konfiguracja adresów URL
