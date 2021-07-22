@@ -1,7 +1,7 @@
 # Instrukcja instalacji oraz obsługi wtyczki „BluePayment” dla platformy OpenCart
 
 ## Podstawowe informacje
-BluePayment to moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie opartym na platformie OpenCart.
+BluePayment to moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie opartym na platformie OpenCart. Jeżeli jeszcze nie masz wtyczki, możesz ją pobrać [tutaj.](https://github.com/bluepayment-plugin/opencart-plugin/archive/refs/heads/master.zip)
 
 ### Główne funkcje
 
@@ -80,6 +80,21 @@ Pola wspólne dla wszystkich walut:
 <img width="514" alt="Przykładowy wygląd ustawień  poszczególnych walut" src="https://user-images.githubusercontent.com/87177993/126635294-083fb905-8700-4ee0-b171-9c5b7bb3ffe7.png">
 
 Przykładowy wygląd ustawień poszczególnych walut
+
+### Konfiguracja adresów URL
+
+Upewnij się, że w panelach administracyjnych BlueMedia https://oplacasie.bm.pl oraz https://oplacasie-accept.bm.p l poniższe pola zawierają poprawne adresy sklepu.
+
+- Konfiguracja adresu powrotu po płatności
+
+https://domena-sklepu.pl/index.php?route=extension/payment/ bluepayment/paymentReturn
+
+- Konfiguracja adresu, na który jest wysyłany ITN 
+
+https://domena-sklepu.pl/index.php?route=extension/payment/ bluepayment/processItn
+![](Aspose.Words.1383d066-ff99-4ba8-8972-f38f314d96d2.006.jpeg)Strona  PAGE   \\* MERGEFORMAT 1 z  NUMPAGES   \\* MERGEFORMAT 6
+
+
 ## Logi
 
 1. Przejdź do zakładki Konfiguracja modułu > Logi.
@@ -94,14 +109,3 @@ Dane te mogą się okazać przydatne przy zgłaszaniu problemów z działanie
 
 Zakładka z logami - przykładowy widok
 
-# Konfiguracja adresów URL
-Należy upewnić się, że w panelach administracyjnych BlueMedia [ ](https://oplacasie.bm.pl/)[https://](https://oplacasie.bm.pl/)[ ](https://oplacasie.bm.pl/)[oplacasie.bm.pl](https://oplacasie.bm.pl/)[ ](https://oplacasie.bm.pl/)	[ ](https://oplacasie.bm.pl/)[ ](https://oplacasie.bm.pl/)oraz [ ](https://oplacasie-accept.bm.pl/)[https://](https://oplacasie-accept.bm.pl/)[ ](https://oplacasie-accept.bm.pl/)[oplacasie-accept.bm.p](https://oplacasie-accept.bm.pl/)[ ](https://oplacasie-accept.bm.pl/)	[l](https://oplacasie-accept.bm.pl/)[  ](https://oplacasie-accept.bm.pl/) poniższe pola zawierają poprawne adresy sklepu.
-
-- Konfiguracja adresu powrotu po płatności
-
-https://domena-sklepu.pl/index.php?route=extension/payment/ bluepayment/paymentReturn
-
-- Konfiguracja adresu, na który jest wysyłany ITN 
-
-https://domena-sklepu.pl/index.php?route=extension/payment/ bluepayment/processItn
-![](Aspose.Words.1383d066-ff99-4ba8-8972-f38f314d96d2.006.jpeg)Strona  PAGE   \\* MERGEFORMAT 1 z  NUMPAGES   \\* MERGEFORMAT 6
