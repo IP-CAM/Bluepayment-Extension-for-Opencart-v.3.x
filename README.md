@@ -18,7 +18,7 @@ Do najważniejszych funkcji modułu zalicza się:
 
 ### Opis zmian
 Wersja 1.0.0
-• Pierwsza wersja dokumentu
+- Pierwsza wersja dokumentu
 
 ## Instalacja modułu
 Możesz zainstalować moduł płatności jedną z dwóch metod – automatycznie lub manualnie.
@@ -79,6 +79,7 @@ Pola wspólne dla wszystkich walut:
 
 <img width="514" alt="Przykładowy wygląd ustawień  poszczególnych walut" src="https://user-images.githubusercontent.com/87177993/126635294-083fb905-8700-4ee0-b171-9c5b7bb3ffe7.png">
 
+Przykładowy wygląd ustawień poszczególnych walut
 ## Logi
 
 1. Przejdź do zakładki Konfiguracja modułu > Logi.
@@ -91,8 +92,8 @@ Dane te mogą się okazać przydatne przy zgłaszaniu problemów z działanie
 
 <img width="557" alt="Zakładka z logami - przykładowy widok" src="https://user-images.githubusercontent.com/87177993/126635650-fc7a781a-b239-49f0-a629-3d3f4cd7de6e.png">
 
-
 Zakładka z logami - przykładowy widok
+
 # Konfiguracja adresów URL
 Należy upewnić się, że w panelach administracyjnych BlueMedia [ ](https://oplacasie.bm.pl/)[https://](https://oplacasie.bm.pl/)[ ](https://oplacasie.bm.pl/)[oplacasie.bm.pl](https://oplacasie.bm.pl/)[ ](https://oplacasie.bm.pl/)	[ ](https://oplacasie.bm.pl/)[ ](https://oplacasie.bm.pl/)oraz [ ](https://oplacasie-accept.bm.pl/)[https://](https://oplacasie-accept.bm.pl/)[ ](https://oplacasie-accept.bm.pl/)[oplacasie-accept.bm.p](https://oplacasie-accept.bm.pl/)[ ](https://oplacasie-accept.bm.pl/)	[l](https://oplacasie-accept.bm.pl/)[  ](https://oplacasie-accept.bm.pl/) poniższe pola zawierają poprawne adresy sklepu.
 
