@@ -108,5 +108,5 @@ Dane te mogą się okazać przydatne przy zgłaszaniu problemów z działanie
 
 <img width="557" alt="Zakładka z logami - przykładowy widok" src="https://user-images.githubusercontent.com/87177993/126635650-fc7a781a-b239-49f0-a629-3d3f4cd7de6e.png">
 
-Zakładka z logami - przykładowy widok
+*Zakładka z logami - przykładowy widok*
 
