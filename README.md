@@ -48,7 +48,7 @@ Widok modułu w zakładce "Rozszerzenia"
 
 ## Konfiguracja modułu
 
-## Konfiguracja podstawowych pól wtyczki
+### Konfiguracja podstawowych pól wtyczki
 
 1. W sekcji Włącz/Wyłącz decydujesz czy kanał płatności będzie widoczny podczas składania zamówienia.
 
@@ -64,9 +64,10 @@ Jeżeli wybierzesz środowisko testowe, moduł nie będzie przetwarzał żadnych
 
 6. Po uzupełnieniu wszystkich pól – wciśnij: Zapisz zmiany i gotowe.
 
+<img width="257" alt="Widok konfiguracji modułu" src="https://user-images.githubusercontent.com/87177993/126634649-d01a3169-ecc0-423d-8e14-9a3af7746c22.png">
 
 
-## Konfiguracja sekcji Ustawienia walut
+### Konfiguracja sekcji Ustawienia walut
 
 Żeby wyświetlić waluty – zdefiniuj je w zakładce System ➝ Localisation ➝ Currencies
 
