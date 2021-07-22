@@ -1,13 +1,4 @@
-Instrukcja instalacji oraz obsługi wtyczki „BluePayment” dla platformy OpenCart
-
-|**Projekt**|**BluePayment**|
-| :- | :- |
-|**Tytuł**|Instrukcja instalacji „BluePayment” dla systemu OpenCart|
-|**Rodzaj**|Instrukcja użytkownika|
-|**Wersja dokumentu**|1.0.0|
-|**Wersja wtyczki**|1.0.0|
-|**Platforma**|OpenCart|
-
+# Instrukcja instalacji oraz obsługi wtyczki „BluePayment” dla platformy OpenCart
 
 ## Podstawowe informacje
 BluePayment to moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie opartym na platformie OpenCart.
@@ -29,23 +20,23 @@ Do najważniejszych funkcji modułu zalicza się:
 Wersja 1.0.0
 • Pierwsza wersja dokumentu
 
-# Instalacja modułu
+## Instalacja modułu
 Możesz zainstalować moduł płatności jedną z dwóch metod – automatycznie lub manualnie.
 
-Instalacja manualna
+### Instalacja manualna
 
 1. Przejdź do zakładki Extensions ➝ Installer
 2. Za pomocą formularza załaduj plik z modułem, a następnie wyślij formularz.
 3. Przejdź do punktu Aktywacja modułu
 
-Instalacja automatyczna
+### Instalacja automatyczna
 
 1. Przejdź do zakładki Extensions ➝ Marketplace
 2. Za pomocą wyszukiwarki wyszukaj wtyczkę Blue Media płatności online
 3. W zakładce Download kliknij przycisk Install
 4. Przejdź do punktu Aktywacja modułu
 
-# Aktywacja
+## Aktywacja
 
 1. Przejdź do zakładki Extensions > Extensions 
 2. Z listy rozwijanej wybierz Payments
@@ -53,51 +44,39 @@ Instalacja automatyczna
 
 <img width="306" alt="Widok modułu w zakładce Rozszerzenia" src="https://user-images.githubusercontent.com/87177993/126613447-92c964e1-4f31-4ac3-91e4-663f47380f9a.png">
 
-
 Widok modułu w zakładce "Rozszerzenia"
-# Konfiguracja modułu
-### 1. Konfiguracja podstawowych pól 
-- „Włącz/Wyłącz”
 
-Wybór wartości „Włączony/Wyłączony” określa, czy kanał płatności będzie  widoczny przy składaniu zamówienia.
+## Konfiguracja modułu
 
-- „Użyj środowiska testowego”
+## Konfiguracja podstawowych pól wtyczki
 
-Zaznaczenie opcji na „Tak” powoduje, że wszystkie płatności będą przekierowywane na testową bramkę płatniczą, która znajduje się pod adresem https://pay-accept.bm.pl/. W przeciwnym przypadku zostanie ustawiona produkcyjna bramka płatnicza – wszystkie płatności będą przekierowane na adres https://pay.bm.pl/
+1. W sekcji Włącz/Wyłącz decydujesz czy kanał płatności będzie widoczny podczas składania zamówienia.
 
-W przypadku wyboru środowiska testowego moduł nie będzie przetwarzała żadnych faktycznych płatności.
+2. Użyj środowiska testowego – wybierając opcję TAK, sprawisz, że wszystkie płatności będą przekierowywane na testową bramkę płatniczą, która znajduje się pod adresem https://oplacasie-accept.bm.pl. Jeżeli tego nie zrobisz, automatycznie zostanie ustawiona produkcyjna wersja bramki płatniczej, a wszystkie płatności zostaną przekierowane na adres https://oplacasie.bm.pl.
 
-- „Status oczekiwania na płatność”
+Jeżeli wybierzesz środowisko testowe, moduł nie będzie przetwarzał żadnych faktycznych płatności.
 
-Wybrany status zostanie ustawiony dla nowego zamówienia.
+3. Status oczekiwania na płatność – wybrany status zostanie ustawiony dla nowego zamówienia.
 
-- „Status prawidłowej płatności”
+4. Status prawidłowej płatności – wybrany status zostanie ustawiony dla zamówienia, które zostało prawidłowo opłacone.
 
-Wybrany status zostanie ustawiony dla zamówienia, które zostało poprawnie opłacone.
+5. Status nieprawidłowej płatności – wybrany status zostanie ustawiony dla zamówienia, które nie zostało prawidłowo opłacone.
 
-- „Status nieprawidłowej płatności”
+6. Po uzupełnieniu wszystkich pól – wciśnij: Zapisz zmiany i gotowe.
 
-Wybrany status zostanie ustawiony dla zamówienia, dla którego płatność nie powiodła się. 
 
-![](Aspose.Words.1383d066-ff99-4ba8-8972-f38f314d96d2.003.jpeg)
 
-Widok konfiguracji modułu
-### 2. Konfiguracja sekcji „Ustawienia walut”
-*W zakładach zostają wyświetlone waluty, które zostały zdefiniowane w systemie w zakładce System*  → *Localisation*  → *Currencies.*
+## Konfiguracja sekcji Ustawienia walut
 
-- „Identyfikator serwisu partnera”
+Żeby wyświetlić waluty – zdefiniuj je w zakładce System ➝ Localisation ➝ Currencies
 
-` `Wartość liczbowa - unikalny identyfikator sklepu.
+Pola wspólne dla wszystkich walut:
 
-- „Klucz współdzielony”
+1. Identyfikator serwisu partnera – ma wartość liczbową i jest unikalny dla każdego sklepu (otrzymasz go od Blue Media).
 
-` `Unikalny klucz przypisany do danego sklepu. 
+2. Klucz współdzielony – unikalny klucz przypisany do danego sklepu (otrzymasz go od Blue Media).
 
-` `Wartości obu pól są dostarczone przez BlueMedia.
 
-![](Aspose.Words.1383d066-ff99-4ba8-8972-f38f314d96d2.004.jpeg)
-
-Przykładowy wygląd ustawień  poszczególnych walut
 # Logi modułu
 Logi wtyczki dostępne są w sekcji *konfiguracji modułu w zakładce „Logi”.*
 
