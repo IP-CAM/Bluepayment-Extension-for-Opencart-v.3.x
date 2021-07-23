@@ -12,7 +12,7 @@ Do najważniejszych funkcji modułu zalicza się:
 - obsługę dwóch trybów działania – testowego i produkcyjnego (dla każdego z nich wymagane są osobne dane kont, po które zwróć się do nas)
 - przekierowanie na paywall/bramkę Blue media, gdzie są dostępne wszystkie formy płatności 
 
-### Wymagania systemowe.
+### Wymagania systemowe
 - OpenCart 3 lub wyższa
 - Wersja PHP 7.1 lub wyższa
 
