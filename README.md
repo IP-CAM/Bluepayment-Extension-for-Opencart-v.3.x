@@ -1,7 +1,7 @@
 # Instrukcja instalacji oraz obsługi wtyczki „BluePayment” dla platformy OpenCart
 
 ## Podstawowe informacje
-BluePayment to moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie opartym na platformie OpenCart. Jeżeli jeszcze nie masz wtyczki, możesz ją pobrać [tutaj.](https://github.com/bluepayment-plugin/opencart-plugin/blob/master/bm.ocmod.zip)
+BluePayment to moduł płatności umożliwiający realizację transakcji bezgotówkowych w sklepie opartym na platformie OpenCart. Jeżeli jeszcze nie masz wtyczki, możesz ją pobrać [tutaj.]([https://github.com/bluepayment-plugin/opencart-plugin/blob/master/bm.ocmod.zip](https://github.com/bluepayment-plugin/opencart-plugin/raw/master/bm.ocmod.zip))
 
 ### Główne funkcje
 
