@@ -29,13 +29,6 @@ Możesz zainstalować moduł płatności jedną z dwóch metod – automatycznie
 2. Za pomocą formularza **załaduj plik z modułem**, a następnie wyślij formularz.
 3. Przejdź do punktu Aktywacja modułu
 
-### Instalacja automatyczna
-
-1. Przejdź do zakładki **Extensions ➝ Marketplace**
-2. Za pomocą wyszukiwarki wyszukaj wtyczkę **Blue Media płatności online**
-3. W zakładce **Download** kliknij przycisk **Install**
-4. Przejdź do punktu Aktywacja modułu
-
 ## Aktywacja
 
 1. Przejdź do zakładki **Extensions > Extensions** 
