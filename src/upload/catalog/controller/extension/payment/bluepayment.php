@@ -62,7 +62,17 @@ class ControllerExtensionPaymentBluepayment extends Controller
                 $this->language->get('text_history_payment_pending')
             );
 
-            $this->response->setOutput($gateway->doTransactionStandard($transaction_data));
+            $result = $gateway->doInitTransaction($transaction_data);
+
+            $redirectUrl = property_exists($result, 'redirecturl') ? (string)$result->redirecturl : null;
+
+            $response = [
+                'redirect' => $redirectUrl,
+                'order_id' => $this->session->data['order_id'],
+            ];
+
+            $this->response->addHeader('Content-Type: application/json');
+            $this->response->setOutput(json_encode($response));
         } catch (Throwable $e) {
             $this->Logger->log(
                 LogLevel::WARNING,
@@ -117,10 +127,22 @@ class ControllerExtensionPaymentBluepayment extends Controller
             $orderId = $this->ParamSuffixer->removeSuffix($transaction->getOrderId());
             $order = $this->model_checkout_order->getOrder($orderId);
 
-            $generatedOrderHash = Gateway::generateHash($this->ItnDataBuilder->build($service_credentials, $transaction));
+            $dataToHash = $this->ItnDataBuilder->build(Gateway::getItnInXml());
+            $generatedOrderHash = Gateway::generateHash($dataToHash);
 
             if ($generatedOrderHash !== $transaction->getHash()) {
                 $transactionConfirmed = false;
+
+                $this->Logger->log(
+                    LogLevel::WARNING,
+                    'Hash mismatch',
+                    [
+                        'Order ID' => $orderId,
+                        'Generated hash' => $generatedOrderHash,
+                        'Received hash' => $transaction->getHash(),
+                        'Transaction data' => $dataToHash
+                    ]
+                );
             }
 
             if ($transactionConfirmed) {

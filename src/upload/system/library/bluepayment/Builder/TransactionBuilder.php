@@ -18,7 +18,7 @@ final class TransactionBuilder
         $this->currency = $registry->get('currency');
     }
 
-    public function build(array $order_info, int $service_id, int $gateway_id = 0): TransactionStandard
+    public function build(array $order_info, int $service_id, ?int $gateway_id = null): TransactionStandard
     {
         $order_id = $this->registry->get('ParamSuffixer')->addSuffix($order_info['order_id']);
 

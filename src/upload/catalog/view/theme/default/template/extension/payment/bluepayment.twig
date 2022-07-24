@@ -21,7 +21,7 @@
         var buttonEl = this;
         $.ajax({
             url: '{{ start_transaction_uri }}',
-            dataType: 'text',
+            dataType: 'json',
             beforeSend: function() {
                 $(buttonEl).button('loading');
             },
@@ -29,7 +29,11 @@
                 $(buttonEl).button('reset');
             },
             success: function(response) {
-                $('body').html(response);
+                if (response.redirect) {
+                    window.location.href = response.redirect;
+                } else {
+                    alert('Unable to redirect. Try again later.');
+                }
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
