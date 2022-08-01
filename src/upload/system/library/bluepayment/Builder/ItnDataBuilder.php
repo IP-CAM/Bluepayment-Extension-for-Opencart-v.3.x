@@ -4,21 +4,40 @@ namespace bluepayment\Builder;
 
 use bluepayment\ValueObject\ServiceCredentials;
 use BlueMedia\OnlinePayments\Model\ItnIn;
+use SimpleXMLElement;
 
 final class ItnDataBuilder
 {
-    public function build(ServiceCredentials $service_credentials, ItnIn $transaction): array
+
+    /**
+     * @var string[]
+     */
+    private $checkHashArray = [];
+
+    public function build(SimpleXMLElement $response): array
     {
-        return [
-            'serviceID' => (int) $service_credentials->getServiceId(),
-            'orderID' => $transaction->getOrderId(),
-            'remoteID' => $transaction->getRemoteId(),
-            'amount' => $transaction->getAmount(),
-            'currency' => $transaction->getCurrency(),
-            'gatewayID' => $transaction->getGatewayId(),
-            'paymentDate' => $transaction->getPaymentDate()->format('YmdHis'),
-            'paymentStatus' => $transaction->getPaymentStatus(),
-            'paymentStatusDetails' => $transaction->getPaymentStatusDetails(),
-        ];
+        $this->checkInList($response);
+
+        return $this->checkHashArray;
+    }
+
+    /**
+     * @param  array|object  $list
+     *
+     * @return void
+     */
+    private function checkInList($list)
+    {
+        foreach ((array)$list as $key => $row) {
+            if (strtolower($key) === 'hash') {
+                continue;
+            }
+
+            if (is_object($row)) {
+                $this->checkInList($row);
+            } else {
+                $this->checkHashArray[] = $row;
+            }
+        }
     }
 }

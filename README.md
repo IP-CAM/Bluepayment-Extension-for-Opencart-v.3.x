@@ -17,6 +17,10 @@ Do najważniejszych funkcji modułu zalicza się:
 - Wersja PHP 7.1 lub wyższa
 
 ### Opis zmian
+
+Wersja 1.0.1
+- Poprawiliśmy wyliczanie hasha.
+
 Wersja 1.0.0
 - Pierwsza wersja dokumentu
 
