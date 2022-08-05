@@ -18,6 +18,10 @@ Do najważniejszych funkcji modułu zalicza się:
 
 ### Opis zmian
 
+Wersja 1.0.2
+- Poprawiliśmy wyświetlanie strony z konfiguracją modułlu w panelu administracyjnym.
+- Dodaliśmy usuwanie białych znaków z ServiceID / SharedKey. 
+
 Wersja 1.0.1
 - Poprawiliśmy wyliczanie hasha.
 

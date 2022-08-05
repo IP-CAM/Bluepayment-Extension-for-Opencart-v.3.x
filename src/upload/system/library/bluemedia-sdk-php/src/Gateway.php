@@ -299,8 +299,8 @@ class Gateway
 
         self::$mode             = $mode;
         self::$hashingAlgorithm = $hashingAlgorithm;
-        self::$serviceId        = $serviceId;
-        self::$hashingSalt      = $hashingSalt;
+        self::$serviceId        = trim($serviceId);
+        self::$hashingSalt      = trim($hashingSalt);
         self::$hashingSeparator = $hashingSeparator;
         self::$httpClient       = new HttpClient();
 
