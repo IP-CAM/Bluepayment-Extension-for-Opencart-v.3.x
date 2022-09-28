@@ -2,6 +2,15 @@
 // Heading
 $_['heading_title'] = 'Płatności online BM';
 
+// Introduction
+$_['introduction_title'] = 'Jak zacząć?';
+$_['introduction_first_step'] = 'Załóż darmowe konto w serwisie.';
+$_['introduction_register'] = 'Zarejestruj się';
+$_['introduction_second_step'] = 'Podaj dane Twojej firmy i potwierdź je przelewem weryfikacyjnym.';
+$_['introduction_third_step'] = 'Skonfiguruj płatności w swoim sklepie.';
+$_['introduction_learn'] = 'Dowiedz się więcej';
+$_['introduction_learn2'] = 'o wdrożeniu płatności w Twoim sklepie.';
+
 // Tabs
 $_['tab_settings'] = 'Ustawienia';
 $_['tab_logs'] = 'Logi';
