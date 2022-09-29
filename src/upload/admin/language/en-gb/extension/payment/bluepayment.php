@@ -3,6 +3,8 @@
 $_['heading_title'] = 'BM online payments';
 
 // Introduction
+$_['prepare_regulations'] = 'Fee only 1,19%.';
+$_['fee'] = 'Prepare store regulations 10% off.';
 $_['introduction_title'] = 'How to get started?';
 $_['introduction_first_step'] = 'Create a free account on the site.';
 $_['introduction_register'] = 'Register';

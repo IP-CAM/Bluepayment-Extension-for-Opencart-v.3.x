@@ -7,7 +7,7 @@
     font-size: 24px;
     color: #4c4d5a;
     display: inline-block;
-    margin-bottom: 15px;
+    margin: 15px 0;
     text-shadow: 0 1px #fff;
 }
 .introduction--row {
@@ -16,6 +16,7 @@
 .introduction--col {
     flex: 1;
     display: flex;
+    align-items: center;
 }
 .introduction--num {
     border: 1px solid #00b5dd;
@@ -28,9 +29,23 @@
     font-size: 1.6rem;
 }
 .introduction--content {
+    padding: 0 5px;
+}
+.introduction--content__padding {
     padding: 0 15px;
 }
 
 .introduction--learn-more {
     margin: 15px 0;
+}
+.introduction--check {
+    background: url('../../images/bluepayment/check.svg') no-repeat;
+    height: 12px;
+    width: 19px;
+}
+.introduction--logo_container {
+    flex-basis: 150px;
+}
+.introduction--logo {
+    max-width: 150px;
 }

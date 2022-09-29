@@ -3,6 +3,8 @@
 $_['heading_title'] = 'Płatności online BM';
 
 // Introduction
+$_['prepare_regulations'] = 'Prowizja tylko 1,19%.';
+$_['fee'] = 'Przygotuj regulamin sklepu 10% taniej.';
 $_['introduction_title'] = 'Jak zacząć?';
 $_['introduction_first_step'] = 'Załóż darmowe konto w serwisie.';
 $_['introduction_register'] = 'Zarejestruj się';
