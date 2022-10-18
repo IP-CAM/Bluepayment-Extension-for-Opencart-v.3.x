@@ -18,6 +18,9 @@ Do najważniejszych funkcji modułu zalicza się:
 
 ### Opis zmian
 
+Wersja 1.0.3
+- Dodaliśmy informacje na temat rozpoczęcia przyjmowania płatności w OpenCart.
+
 Wersja 1.0.2
 - Poprawiliśmy wyświetlanie strony z konfiguracją modułlu w panelu administracyjnym.
 - Dodaliśmy usuwanie białych znaków z ServiceID / SharedKey. 
