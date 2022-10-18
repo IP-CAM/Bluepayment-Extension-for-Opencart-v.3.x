@@ -34,6 +34,61 @@
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
             </div>
         {% endif %}
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="introduction">
+                    <div class="introduction--row">
+                        <div class="introduction--logo_container">
+                            <img src="/admin/view/images/bluepayment/logo.svg" class="introduction--logo" alt="Blue Media" />
+                        </div>
+                        <div class="introduction--col">
+                            <div class="introduction--check"></div>
+                            <div class="introduction--content">
+                                {{  prepare_regulations }}<br />
+                                <a href="https://developers.bluemedia.pl/legal-geek?mtm_campaign=magento_legalgeek&mtm_source=magento_backoffice&mtm_medium=cta"
+                                   target="_blank">{{ introduction_learn }}</a>
+                            </div>
+                        </div>
+                        <div class="introduction--col">
+                            <div class="introduction--check"></div>
+                            <div class="introduction--content">
+                                <a href="https://platnosci.bm.pl/?pk_campaign=magento_panel&pk_source=magento_panel&pk_medium=cta"
+                                   class="introduction--link" target="_blank">{{ fee }}</a><br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>{{ introduction_title }}</h2>
+
+                    <div class="introduction--row">
+                        <div class="introduction--col">
+                            <div class="introduction--num">1</div>
+                            <div class="introduction--content introduction--content__padding">
+                                {{ introduction_first_step }}<br />
+                                <a href="https://platnosci.bm.pl/?pk_campaign=magento_panel&pk_source=magento_panel&pk_medium=cta"
+                                   class="introduction--link" target="_blank">{{ introduction_register }}</a>
+                            </div>
+                        </div>
+                        <div class="introduction--col">
+                            <div class="introduction--num">2</div>
+                            <div class="introduction--content introduction--content__padding">{{ introduction_second_step }}</div>
+                        </div>
+                        <div class="introduction--col">
+                            <div class="introduction--num">3</div>
+                            <div class="introduction--content introduction--content__padding">{{ introduction_third_step }}</div>
+                        </div>
+                    </div>
+
+                    <p class="introduction--learn-more">
+                        <a href="https://developers.bluemedia.pl/online/wdrozenie-krok-po-kroku?mtm_campaign=magento_developers_aktywacja_platnosci&mtm_source=magento_backend&mtm_medium=hyperlink"
+                           target="_blank" class="introduction--link">{{ introduction_learn }}</a>
+                        {{ introduction_learn2 }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_module_edit }}</h3>
