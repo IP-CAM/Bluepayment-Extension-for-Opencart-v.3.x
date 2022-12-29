@@ -138,10 +138,18 @@
                                             <option value="0" selected="selected">{{ text_no }}</option>
                                         {% endif %}
                                     </select>
+                                    <p class="help-block">{{ helper_test_mode }}</p>
+
                                     {% if error_payment_bluepayment_test_mode %}
                                         <div class="text-danger">{{ error_payment_bluepayment_test_mode }}</div>
                                     {% endif %}
                                 </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                {{ helper_test_mode_alert_1 }}<br />
+                                {{ helper_test_mode_alert_2 }} <a href="https://developers.bluemedia.pl/kontakt?mtm_campaign=magento_panel&mtm_source=magento_panel&mtm_medium=hiperlink" target="_blank">{{ helper_test_mode_alert_3 }}</a>.
                             </div>
 
                             <div class="form-group">
