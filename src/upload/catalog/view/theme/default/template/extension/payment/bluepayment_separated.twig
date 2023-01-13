@@ -18,9 +18,19 @@
 </div>
 <script type="text/javascript">
     $('.js-bluepayment-confirm').on('click', function() {
-        var buttonEl = this;
+        let buttonEl = this;
+        let url = '{{ start_transaction_uri }}';
+
+        let data = {};
+
+        {% if gateway_id %}
+            data['gateway_id'] = '{{ gateway_id }}';
+        {% endif %}
+
         $.ajax({
-            url: '{{ start_transaction_uri }}',
+            url: url,
+            data: data,
+            method: 'POST',
             dataType: 'json',
             beforeSend: function() {
                 $(buttonEl).button('loading');
