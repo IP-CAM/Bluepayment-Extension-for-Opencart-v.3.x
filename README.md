@@ -15,13 +15,15 @@ Do najważniejszych funkcji modułu zalicza się:
 - przekierowanie na paywall/bramkę Blue media, gdzie są dostępne wszystkie formy płatności 
 
 ### Wymagania systemowe
-- OpenCart 3 lub wyższa
+- OpenCart 3.x
 - Wersja PHP 7.1 lub wyższa
 
 ### Opis zmian
 
 Wersja 1.0.5
 - Dodaliśmy obsługę Visa Mobile.
+- Ustandaryzowaliśmy tekst **Klucz konfiguracyjny (hash)** (wcześniej _Klucz współdzielony_) w konfiguracji modułu.
+- Dodaliśmy informację o aktualnej wersji platformy oraz moduły podczas rozpoczęcia transakcji.
 
 Wersja 1.0.4
 - Dodaliśmy komunikat pomocniczy dot. środowiska testowego w panelu administracyjnym.
