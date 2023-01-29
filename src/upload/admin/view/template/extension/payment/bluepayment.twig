@@ -40,7 +40,7 @@
                 <div class="introduction">
                     <div class="introduction--row">
                         <div class="introduction--logo_container">
-                            <img src="/admin/view/images/bluepayment/logo.svg" class="introduction--logo" alt="Blue Media" />
+                            <img src="/admin/view/image/bluepayment/logo.svg" class="introduction--logo" alt="Blue Media" />
                         </div>
                         <div class="introduction--col">
                             <div class="introduction--check"></div>
@@ -300,7 +300,7 @@ $(document).ready(function(){
             logDownloadButtonEl = $('.js-log-download'),
             currentDownloadHref = logDownloadButtonEl.data('href'),
             selectedOption = $('.js-log-select option:selected').prop('value'),
-            refreshLogUri = '{{ refresh_log_uri|convert_encoding('UTF-8', 'HTML-ENTITIES') }}' + '&selected_log_file=' + selectedOption;
+            refreshLogUri = '{{ refresh_log_uri|replace({"&amp;": "&"}) }}' + '&selected_log_file=' + selectedOption;
 
         $.ajax({
             url: refreshLogUri,

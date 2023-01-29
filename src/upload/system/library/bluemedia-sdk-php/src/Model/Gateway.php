@@ -7,44 +7,56 @@ use DomainException;
 
 class Gateway extends AbstractModel
 {
-    const GATEWAY_ID_CARD = 1500;
-    const GATEWAY_ID_MTRANSFER = 3;
-    const GATEWAY_ID_MULTITRANSFER = 17;
-    const GATEWAY_ID_BZWBK = 27;
-    const GATEWAY_ID_BPH = 33;
-    const GATEWAY_ID_PEKAO24PRZELEW = 52;
-    const GATEWAY_ID_PEOPAY = 1037;
-    const GATEWAY_ID_CA_ONLINE = 59;
-    const GATEWAY_ID_R_PRZELEW = 76;
-    const GATEWAY_ID_EUROBANK = 79;
-    const GATEWAY_ID_ING = 68;
-    const GATEWAY_ID_MILLENNIUM = 85;
-    const GATEWAY_ID_BOS = 86;
-    const GATEWAY_ID_MERITUM_BANK = 87;
-    const GATEWAY_ID_CITI_HANDLOWY = 90;
-    const GATEWAY_ID_ALIOR_BANK = 95;
-    const GATEWAY_ID_PBS_BANK = 98;
-    const GATEWAY_ID_NETBANK = 99;
-    const GATEWAY_ID_POCZTOWY24 = 108;
-    const GATEWAY_ID_TOYOTA_BANK = 117;
-    const GATEWAY_ID_PLUS_BANK = 131;
-    const GATEWAY_ID_GETIN_BANK = 513;
-    const GATEWAY_ID_DEUTSCHE_BANK = 1002;
-    const GATEWAY_ID_BNP_PARIBAS = 1035;
-    const GATEWAY_ID_IPKO = 1063;
-    const GATEWAY_ID_INTELIGO = 1064;
-    const GATEWAY_ID_IKO = 1065;
-    const GATEWAY_ID_VOLKSWAGEN_BANK = 21;
-    const GATEWAY_ID_SPOLDZIELCZA_GRUPA_BANKOWA = 35;
-    const GATEWAY_ID_BGZ = 71;
-    const GATEWAY_ID_OTHER = 9;
-    const GATEWAY_ID_BLIK = 509;
-    const GATEWAY_ID_VISA_CHECKOUT = 1511;
-    const GATEWAY_ID_GOOGLE_PAY = 1512;
-    const GATEWAY_ID_IFRAME = 1506;
+    public const GATEWAY_ID_MTRANSFER = 3;
+    public const GATEWAY_ID_MULTITRANSFER = 17;
+    public const GATEWAY_ID_BZWBK = 27;
+    public const GATEWAY_ID_BPH = 33;
+    public const GATEWAY_ID_PEKAO24PRZELEW = 52;
+    public const GATEWAY_ID_PEOPAY = 1037;
+    public const GATEWAY_ID_CA_ONLINE = 59;
+    public const GATEWAY_ID_R_PRZELEW = 76;
+    public const GATEWAY_ID_EUROBANK = 79;
+    public const GATEWAY_ID_ING = 68;
+    public const GATEWAY_ID_MILLENNIUM = 85;
+    public const GATEWAY_ID_BOS = 86;
+    public const GATEWAY_ID_MERITUM_BANK = 87;
+    public const GATEWAY_ID_CITI_HANDLOWY = 90;
+    public const GATEWAY_ID_ALIOR_BANK = 95;
+    public const GATEWAY_ID_PBS_BANK = 98;
+    public const GATEWAY_ID_NETBANK = 99;
+    public const GATEWAY_ID_POCZTOWY24 = 108;
+    public const GATEWAY_ID_TOYOTA_BANK = 117;
+    public const GATEWAY_ID_PLUS_BANK = 131;
+    public const GATEWAY_ID_GETIN_BANK = 513;
+    public const GATEWAY_ID_DEUTSCHE_BANK = 1002;
+    public const GATEWAY_ID_BNP_PARIBAS = 1035;
+    public const GATEWAY_ID_IPKO = 1063;
+    public const GATEWAY_ID_INTELIGO = 1064;
+    public const GATEWAY_ID_IKO = 1065;
+    public const GATEWAY_ID_VOLKSWAGEN_BANK = 21;
+    public const GATEWAY_ID_SPOLDZIELCZA_GRUPA_BANKOWA = 35;
+    public const GATEWAY_ID_BGZ = 71;
+    public const GATEWAY_ID_OTHER = 9;
 
-    const GATEWAY_TYPE_PBL = 'PBL';
-    const GATEWAY_TYPE_FAST_TRANSFER = 'Szybki przelew';
+    // Cards
+    public const GATEWAY_ID_CARD = 1500;
+    public const GATEWAY_ID_ONECLICK = 1503;
+    public const GATEWAY_ID_IFRAME = 1506;
+
+    // Wallets
+    public const GATEWAY_ID_BLIK = 509;
+    public const GATEWAY_ID_VISA_CHECKOUT = 1511;
+    public const GATEWAY_ID_GOOGLE_PAY = 1512;
+    public const GATEWAY_ID_VISA_MOBILE = 1523;
+
+    // Installments
+    public const GATEWAY_ID_SMARTNEY = 700;
+    public const HUB_GATEWAY_ID = 702;
+    public const PAYPO_GATEWAY_ID = 705;
+    public const ALIOR_INSTALLMENTS_GATEWAY_ID = 1506;
+
+    public const GATEWAY_TYPE_PBL = 'PBL';
+    public const GATEWAY_TYPE_FAST_TRANSFER = 'Szybki przelew';
 
     /**
      * Cards gateways.
@@ -329,7 +341,7 @@ class Gateway extends AbstractModel
      *
      * @return bool
      */
-    public function isGateway($gatewayId)
+    public function isGateway(int $gatewayId): bool
     {
         return $this->gatewayId === $gatewayId;
     }
