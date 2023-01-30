@@ -15,10 +15,15 @@ Do najważniejszych funkcji modułu zalicza się:
 - przekierowanie na paywall/bramkę Blue media, gdzie są dostępne wszystkie formy płatności 
 
 ### Wymagania systemowe
-- OpenCart 3 lub wyższa
+- OpenCart 3.x
 - Wersja PHP 7.1 lub wyższa
 
 ### Opis zmian
+
+Wersja 1.0.5
+- Dodaliśmy obsługę Visa Mobile.
+- Ustandaryzowaliśmy tekst **Klucz konfiguracyjny (hash)** (wcześniej _Klucz współdzielony_) w konfiguracji modułu.
+- Dodaliśmy informację o aktualnej wersji platformy oraz moduły podczas rozpoczęcia transakcji.
 
 Wersja 1.0.4
 - Dodaliśmy komunikat pomocniczy dot. środowiska testowego w panelu administracyjnym.
@@ -85,7 +90,7 @@ Jeżeli wybierzesz środowisko testowe, moduł nie będzie przetwarzał żadnych
 
 1. **Identyfikator serwisu partnera** – ma wartość liczbową i jest unikalny dla każdego sklepu (otrzymasz go od Blue Media).
 
-2. **Klucz współdzielony** – unikalny klucz przypisany do danego sklepu (otrzymasz go od Blue Media).
+2. **Klucz konfiguracyjny (hash)** – unikalny klucz przypisany do danego sklepu (otrzymasz go od Blue Media).
 
 <img width="514" alt="Przykładowy wygląd ustawień  poszczególnych walut" src="https://user-images.githubusercontent.com/87177993/126635294-083fb905-8700-4ee0-b171-9c5b7bb3ffe7.png">
 

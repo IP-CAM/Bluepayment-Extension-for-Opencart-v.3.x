@@ -6,9 +6,9 @@ use Psr\Log\LogLevel;
 
 class ControllerExtensionPaymentBluepayment extends Controller
 {
-    const STATUS_PENDING = 1;
-    const STATUS_PROCESSING = 2;
-    const STATUS_FAILED = 10;
+    public const STATUS_PENDING = 1;
+    public const STATUS_PROCESSING = 2;
+    public const STATUS_FAILED = 10;
 
     private $ext_path;
     private $inputs = [
@@ -26,7 +26,7 @@ class ControllerExtensionPaymentBluepayment extends Controller
         $this->load->library('bluepayment/Helper/Logger');
         $this->load->library('bluepayment/Dictionary/BluepaymentDictionary');
 
-        $this->ext_path =$this->BluepaymentDictionary->getExtensionPath();
+        $this->ext_path = $this->BluepaymentDictionary->getExtensionPath();
     }
 
     public function index()
@@ -35,11 +35,14 @@ class ControllerExtensionPaymentBluepayment extends Controller
         $this->load->model('setting/setting');
         $this->load->language($this->ext_path);
         $this->load->model('localisation/order_status');
+        $this->load->model('extension/payment/bluepayment');
         $this->load->library('bluepayment/Validator/AdminFormValidator');
+
+        $this->model_extension_payment_bluepayment->checkUpdate();
 
         $this->document->setTitle($this->language->get('heading_title'));
         $this->document->addScript('view/javascript/bluepayment/bluepayment.js');
-        $this->document->addStyle('view/css/bluepayment/bluepayment.css');
+        $this->document->addStyle('view/stylesheet/bluepayment/bluepayment.css');
 
         if ($this->request->server['REQUEST_METHOD'] === 'POST') {
             $this->request->post['payment_bluepayment_currency'] = $this->prepareCurrenciesData(
@@ -101,34 +104,14 @@ class ControllerExtensionPaymentBluepayment extends Controller
 
     public function install()
     {
-        $this->load->model('setting/setting');
-
-        $this->model_setting_setting->editSetting('payment_bluepayment', [
-            'payment_bluepayment_status' => 0,
-            'payment_bluepayment_test_mode' => 1,
-            'payment_bluepayment_currency' => null,
-            'payment_bluepayment_status_pending' => self::STATUS_PENDING,
-            'payment_bluepayment_status_failed' => self::STATUS_FAILED,
-            'payment_bluepayment_status_success' => self::STATUS_PROCESSING,
-        ]);
+        $this->load->model('extension/payment/bluepayment');
+        $this->model_extension_payment_bluepayment->install();
     }
 
     public function uninstall()
     {
-        $this->load->model('setting/setting');
-
-        $settings_to_delete = [
-            'payment_bluepayment_status',
-            'payment_bluepayment_test_mode',
-            'payment_bluepayment_currency',
-            'payment_bluepayment_status_pending',
-            'payment_bluepayment_status_failed',
-            'payment_bluepayment_status_success',
-        ];
-
-        foreach ($settings_to_delete as $setting_to_delete) {
-            $this->model_setting_setting->deleteSetting($setting_to_delete);
-        }
+        $this->load->model('extension/payment/bluepayment');
+        $this->model_extension_payment_bluepayment->uninstall();
     }
 
     public function refreshLog(): void
