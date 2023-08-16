@@ -45,7 +45,10 @@
     margin-right: 5px;
 }
 .introduction--logo_container {
-    flex-basis: 150px;
+    flex-basis: 200px;
+    height: 50px;
+    align-items: center;
+    display: flex;
 }
 .introduction--logo {
     max-width: 150px;
