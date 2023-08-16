@@ -11,7 +11,7 @@ use Monolog\Formatter\LineFormatter;
 
 final class Logger
 {
-    private const LOG_NAME = 'Blue_Media';
+    private const LOG_NAME = 'Autopay';
     private const LOG_FILENAME = '/bluepayment.log';
     private const LOG_FILE_PATH = DIR_LOGS . self::LOG_FILENAME;
     private const MAX_LOG_FILES = 30;

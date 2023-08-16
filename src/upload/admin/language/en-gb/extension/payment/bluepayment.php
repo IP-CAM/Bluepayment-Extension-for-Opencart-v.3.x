@@ -1,6 +1,7 @@
 <?php
 // Heading
-$_['heading_title'] = 'BM online payments';
+$_['heading_title'] = 'Autopay online payments';
+$_['text_bluepayment'] = '<a href="https://autopay.eu" target="_blank"><img src="view/image/bluepayment/logo.svg" alt="Autopay online payments" title="Autopay online payments" style="height: 20px;" /></a>';
 
 // Introduction
 $_['prepare_regulations'] = 'Prepare store regulations 10% off.';
@@ -18,18 +19,20 @@ $_['tab_settings'] = 'Settings';
 $_['tab_logs'] = 'Logs';
 
 // Buttons
+$_['button_save'] = 'Save';
+$_['button_cancel'] = 'Cancel';
 $_['download_module_logs'] = 'Download module logs';
 
 // Text
-$_['text_success'] = 'Success: You have modified BluePayment module!';
+$_['text_success'] = 'Success: You have modified Autopay module!';
 $_['text_module_edit'] = 'Module configuration';
 $_['currency_settings'] = 'Currency settings';
 $_['info_log_loading'] = 'Loading log file...';
 
-
 // Error messages
 $_['log_file_download_error'] = 'Log file not found or file is empty.';
 $_['error_empty_status'] = 'Status is not defined. Use Enabled or Disabled option.';
+$_['error_empty_test_mode'] = 'Select test mode. Use Yes or No option.';
 $_['at_least_one_currency_settings_required'] = 'You need to fill at least one currency settings.';
 $_['currency_settings_both_values_required'] = 'Both fields "Partner\'s website ID" and "Configuration key (hash)" are required for "%s" currency.';
 $_['currency_settings_service_id_integer_required'] = 'Partner\'s website ID for %s must be a numeric value.';
