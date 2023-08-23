@@ -12,7 +12,6 @@ Do najważniejszych funkcji modułu zalicza się:
 - obsługę powiadomień o statusie transakcji (notyfikacje XML)
 - obsługę zakupów bez rejestracji w serwisie
 - obsługę dwóch trybów działania – testowego i produkcyjnego (dla każdego z nich wymagane są osobne dane kont, po które zwróć się do nas)
-- przekierowanie na paywall/bramkę Blue media, gdzie są dostępne wszystkie formy płatności
 - przekierowanie na paywall/bramkę Autopay, gdzie są dostępne wszystkie formy płatności
 
 ### Wymagania systemowe
