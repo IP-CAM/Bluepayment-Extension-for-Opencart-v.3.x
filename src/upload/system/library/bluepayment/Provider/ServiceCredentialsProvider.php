@@ -39,6 +39,11 @@ final class ServiceCredentialsProvider
         );
     }
 
+    public function getCurrentCurrency(): string
+    {
+        return $this->current_currency;
+    }
+
     private function getAllServiceCredentials(): \stdClass
     {
         return json_decode(

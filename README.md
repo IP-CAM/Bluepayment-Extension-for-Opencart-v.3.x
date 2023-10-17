@@ -20,6 +20,9 @@ Do najważniejszych funkcji modułu zalicza się:
 
 ### Opis zmian
 
+Wersja 1.0.7
+- Poprawiliśmy działanie pobierania kanałów płatniczych dla konfiguracji z wieloma walutami.
+
 Wersja 1.0.6
 - Zmieniliśmy nazwę na Autopay
 
