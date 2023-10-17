@@ -5,7 +5,6 @@ namespace BluePayment\Helper;
 require_once DIR_SYSTEM . '/library/bluemedia-sdk-php/index.php';
 
 use BlueMedia\OnlinePayments\Model\Gateway as GatewwayModel;
-use BluePayment\Service\PaywayList;
 use Registry;
 use BlueMedia\OnlinePayments\Gateway as BlueMediaGateway;
 
@@ -14,7 +13,7 @@ final class Gateway
     private $registry;
     private $currency;
 
-    private $paywayList = null;
+    private $gatewayList = null;
 
     public function __construct(Registry $registry)
     {
@@ -25,9 +24,9 @@ final class Gateway
         $this->registry->get('load')->library('bluepayment/Helper/Logger');
     }
 
-    public function isVisaEnabled(): bool
+    public function isVisaEnabled(string $currency): bool
     {
-        $list = $this->getPaywayList();
+        $list = $this->getGatewayList($currency);
 
         if (! is_array($list)) {
             return false;
@@ -45,9 +44,9 @@ final class Gateway
     /**
      * @return GatewwayModel[]
      */
-    private function getPaywayList(): array
+    private function getGatewayList(string $currency): array
     {
-        if ($this->paywayList === null) {
+        if ($this->gatewayList === null) {
             $credentials = $this->registry
                 ->get('ServiceCredentialsProvider')
                 ->getCurrencyServiceCredentials();
@@ -58,9 +57,15 @@ final class Gateway
                 $this->registry->get('ConfigProvider')->getGatewayMode()
             );
 
-            $this->paywayList = $blueMediaGateway->doPaywayList()->getGateways();
+            try {
+                $this->gatewayList = $blueMediaGateway->doGatewayList($currency)->getGateways();
+            } catch (\Exception $e) {
+                echo 'x';
+                var_dump($e->getMessage());
+                die;
+            }
         }
 
-        return $this->paywayList;
+        return $this->gatewayList;
     }
 }

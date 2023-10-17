@@ -5,9 +5,8 @@ namespace BlueMedia\OnlinePayments\Model;
 use BlueMedia\OnlinePayments\Util\Validator;
 use DomainException;
 
-class PaywayList extends AbstractModel
+class GatewayList extends AbstractModel
 {
-
     /**
      * Service id.
      *
@@ -27,7 +26,7 @@ class PaywayList extends AbstractModel
      *
      * @var array
      */
-    private $gateway = [];
+    private $gatewayList = [];
 
     /**
      * Hash.
