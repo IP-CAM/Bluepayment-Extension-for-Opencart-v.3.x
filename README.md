@@ -1,4 +1,4 @@
-# Instrukcja instalacji oraz obsługi wtyczki „Płatności online Autopay” dla platformy OpenCart
+# Instrukcja dla modułu OpenCart: "Płatności online Autopay"
 
 **Moduł przeznaczony jest tylko dla OpenCart w wersji 3. W celu pobrania modułu dla wersji 2.3, przejdź [tutaj.](https://github.com/bluepayment-plugin/opencart-2.3-plugin)**
 
